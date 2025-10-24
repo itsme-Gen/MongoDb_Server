@@ -9,7 +9,8 @@
     "server2": "node RegisterPatient/register.js",
     "server3": "node VerifyPatient/verification.js",
     "server4": "node MedicalHistory/medicalhistory.js",
-    "start": "concurrently \"npm run server1\" \"npm run server2\" \"npm run server3\" \"npm run server4\""
+    "server5": "node fetchUser/fetchUser.js",
+    "start": "concurrently \"npm run server1\" \"npm run server2\" \"npm run server3\" \"npm run server4\" \"npm run server5\""
   },
   "keywords": [],
   "author": "",

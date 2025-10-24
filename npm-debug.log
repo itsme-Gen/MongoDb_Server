@@ -3,16 +3,16 @@
 1 verbose cli   'C:\\Users\\itsmegen\\node_modules\\node\\bin\\node.exe',
 1 verbose cli   'C:\\Users\\itsmegen\\node_modules\\npm\\bin\\npm-cli.js',
 1 verbose cli   'run',
-1 verbose cli   'server3'
+1 verbose cli   'server4'
 1 verbose cli ]
 2 info using npm@2.15.12
 3 info using node@v22.19.0
-4 verbose run-script [ 'preserver3', 'server3', 'postserver3' ]
-5 info preserver3 mongodb_server@1.0.0
-6 info server3 mongodb_server@1.0.0
+4 verbose run-script [ 'preserver4', 'server4', 'postserver4' ]
+5 info preserver4 mongodb_server@1.0.0
+6 info server4 mongodb_server@1.0.0
 7 verbose unsafe-perm in lifecycle true
-8 info mongodb_server@1.0.0 Failed to exec server3 script
-9 verbose stack Error: mongodb_server@1.0.0 server3: `node VerifyPatient/verification.js`
+8 info mongodb_server@1.0.0 Failed to exec server4 script
+9 verbose stack Error: mongodb_server@1.0.0 server4: `node MedicalHistory/medicalhistory.js`
 9 verbose stack Exit status 3221225786
 9 verbose stack     at EventEmitter.<anonymous> (C:\Users\itsmegen\node_modules\npm\lib\utils\lifecycle.js:217:16)
 9 verbose stack     at EventEmitter.emit (node:events:519:28)
@@ -23,17 +23,17 @@
 10 verbose pkgid mongodb_server@1.0.0
 11 verbose cwd C:\Users\itsmegen\Documents\MongoDB_Server
 12 error Windows_NT 10.0.19045
-13 error argv "C:\\Users\\itsmegen\\node_modules\\node\\bin\\node.exe" "C:\\Users\\itsmegen\\node_modules\\npm\\bin\\npm-cli.js" "run" "server3"
+13 error argv "C:\\Users\\itsmegen\\node_modules\\node\\bin\\node.exe" "C:\\Users\\itsmegen\\node_modules\\npm\\bin\\npm-cli.js" "run" "server4"
 14 error node v22.19.0
 15 error npm  v2.15.12
 16 error code ELIFECYCLE
-17 error mongodb_server@1.0.0 server3: `node VerifyPatient/verification.js`
+17 error mongodb_server@1.0.0 server4: `node MedicalHistory/medicalhistory.js`
 17 error Exit status 3221225786
-18 error Failed at the mongodb_server@1.0.0 server3 script 'node VerifyPatient/verification.js'.
+18 error Failed at the mongodb_server@1.0.0 server4 script 'node MedicalHistory/medicalhistory.js'.
 18 error This is most likely a problem with the mongodb_server package,
 18 error not with npm itself.
 18 error Tell the author that this fails on your system:
-18 error     node VerifyPatient/verification.js
+18 error     node MedicalHistory/medicalhistory.js
 18 error You can get information on how to open an issue for this project with:
 18 error     npm bugs mongodb_server
 18 error Or if that isn't available, you can get their info via:

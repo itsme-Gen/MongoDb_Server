@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const conn = require('../MongoDb/db_connection');
 const bcrypt = require('bcrypt')
 const jwt = require("jsonwebtoken")
+const User = require('../Models/User')
 require('dotenv').config()
 
 conn()
@@ -15,29 +16,6 @@ const SECRET_KEY = process.env.SECRET_KEY
 app.use(express.json());
 app.use(cors());
 
-const userSchema = new mongoose.Schema({
-  firstName: { type: String, required: true },
-  middleName: { type: String, required: true },
-  lastName: { type: String, required: true },
-  gender: { type: String, required: true },
-  role: { type: String, required: true },
-  department: { type: String, required: true },
-  licenseNumber: { 
-    type: Number, 
-    required: true,
-    validate: { validator: Number.isInteger, message: '{VALUE} must be an integer' }
-  },
-  hospitalId: { 
-    type: Number, 
-    required: true,
-    validate: { validator: Number.isInteger, message: '{VALUE} must be an integer' }
-  },
-  email: { type: String, required: true},
-  password: { type: String, required: true },
-}, { timestamps: true });
-
-// User Model
-const User = mongoose.model('Users', userSchema);
 
 //Register
 app.post('/register', async (req, res) => {
