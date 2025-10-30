@@ -44,6 +44,6 @@ app.get("/medicalhistory/patients/:patientId", async (req, res) => {
 
 
 
-app.listen(5000,()=>{
-    console.log("Server is running to port 5000")
+app.listen(8003,()=>{
+    console.log("Server is running to port 8003")
 })

@@ -31,6 +31,6 @@ app.get("/employee/:id",async(req,res)=>{
     }
 })
 
-app.listen(9000,()=>{
-    console.log("Server is running to port 9000")
+app.listen(8002,()=>{
+    console.log("Server is running to port 8002")
 })
